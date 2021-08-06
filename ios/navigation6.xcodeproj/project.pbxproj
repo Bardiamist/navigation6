@@ -114,7 +114,6 @@
 				DD20ED869BB141D499DF1CC2 /* Pods-navigation6-navigation6Tests.debug.xcconfig */,
 				4648ABD5747C2001B2E89A3A /* Pods-navigation6-navigation6Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
