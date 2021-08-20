@@ -6,7 +6,7 @@ import {
   Button,
 } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-import { TransitionPresets, createStackNavigator } from '@react-navigation/stack';
+import { createStackNavigator } from '@react-navigation/stack';
 
 const Stack = createStackNavigator();
 
@@ -32,15 +32,13 @@ const Settings = () => (
 function MyStack() {
   return (
     <NavigationContainer>
-      <Stack.Navigator
-        screenOptions={{
-          headerStyle: { backgroundColor: 'gray' },
-        }}
-      >
+      <Stack.Navigator>
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen
           name="Settings"
-          options={TransitionPresets.ModalTransition}
+          options={{
+            headerTransparent: true,
+          }}
           component={Settings}
         />
       </Stack.Navigator>
